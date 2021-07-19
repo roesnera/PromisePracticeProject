@@ -13,7 +13,7 @@ function newJob(data) {
 
 // To check output with string input, expect promise to be rejected
 let strCheck = newJob('Oops');
-numCheck.then((data) => {
+strCheck.then((data) => {
     console.log("That's not right, data: ", data)
 })
 .catch((data) => {
